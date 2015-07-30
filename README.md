@@ -1,9 +1,4 @@
----
-language: css
-tags: css, layout, positioning, float, box model
-type: code along
-resources: 0
----
+
 
 ## Code Along Exercise 4 ~ 28min
 
