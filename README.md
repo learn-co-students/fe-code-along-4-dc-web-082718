@@ -1,4 +1,4 @@
-# Code Along Exercise 4
+# CSS Page Layout Code Along
 
 ## Overview
 
