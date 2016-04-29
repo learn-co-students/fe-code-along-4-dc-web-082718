@@ -22,7 +22,7 @@ Next, open the index.html page in your code editor. Scroll down to the section w
 ```html
 <section id="promotional">...</section>
 
-<section id="news"></section>
+<section id="news">...</section>
 ```
 
 Inside of this news section insert an `<h3>` and a paragraph with some placefiller text.
