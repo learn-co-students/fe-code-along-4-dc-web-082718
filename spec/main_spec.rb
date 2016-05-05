@@ -8,7 +8,7 @@ describe 'index.html' do
 
   before(:each) do
     @comparison = GreenOnion::Compare.new
-    @tolerance = 10.0
+    @tolerance = 0.5
   end
 
   it 'index page should match the solution' do
@@ -46,3 +46,4 @@ describe 'index.html' do
     expect(@comparison.percentage_changed).to be < @tolerance
   end
 end
+
