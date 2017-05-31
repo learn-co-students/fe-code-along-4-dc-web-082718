@@ -365,9 +365,11 @@ It's now time to version our changes using Git. To do so, in Terminal type `git 
 After you finish, make sure you install Firefox if you haven't already as it is required for the screenshot tests to run. Then, type `learn` command from Terminal to run local tests (Mac) or type `learn-test` for Windows.
 If, when running the tests, you encounter the following error:
 ```ERROR:  Error installing green_onion:
-	fileutils requires Ruby version >= 2.5.0dev.```
+	fileutils requires Ruby version >= 2.5.0dev.
+```
 Please run the following directly in the command line:
-```gem install green_onion -f```
+```gem install green_onion -f
+```
 
 After all tests are passing submit a pull request on Github and move on to the next lesson!
 
