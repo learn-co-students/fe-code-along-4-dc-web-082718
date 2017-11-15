@@ -361,22 +361,3 @@ and also remove the gray color from our wrapper class:
 Save the CSS file and head back to the browser and refresh the index page. Scroll to see the header stay in place.
 
 It's now time to version our changes using Git. To do so, in Terminal type `git add .` and press return. Then type `git commit -m "add columns and fixed header and social bar"` and press return. Then push up this feature branch `git push -u origin columns` and press return. Next merge the changes into your master branch. Type `git checkout master` and press return, then `git merge columns` and press return. Then `git push origin master` and press return.
-
-After you finish, make sure you install Firefox if you haven't already as it is required for the screenshot tests to run. Then, type `learn` command from Terminal to run local tests (Mac) or type `learn-test` for Windows.
-
-If, when running the tests, you encounter the following error...
-
-```shell
-ERROR:  Error installing green_onion:
-	fileutils requires Ruby version >= 2.5.0dev.
-```
-...then run the following directly in the command line:
-```shell
-gem install green_onion -f
-```
-
-After all tests are passing submit a pull request on Github and move on to the next lesson!
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/fe-code-along-4' title='Code Along Exercise 4'>Code Along Exercise 4</a> on Learn.co and start learning to code for free.</p>
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/fe-code-along-4'>Code Along Exercise IV</a> on Learn.co and start learning to code for free.</p>
