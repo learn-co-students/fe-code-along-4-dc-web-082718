@@ -1,8 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script);
 
-/* This 
-is 
+/* This
+is
 a comment! */
 
 /* CSS Syntax:
@@ -42,7 +42,7 @@ figcaption {
 /* ID selector (apply to one unique element per page) */
 
 #logo { /* select elements with id="logo" */
-  background: aqua;
+
 }
 
 /* Descendent Selector */
@@ -69,4 +69,89 @@ figcaption {
 
 #details a:active {
   color: red;
+}
+
+/*/////// MEDIA //////*/
+
+img, video, audtio {
+  max-width: 100%; /* will allow all audio, video and images to be fluid and 100% within the confines of their parent element, so that they only take up 100% WITHIN THEIR COLUMN */
+}
+
+/*/////// LAYOUT //////*/
+* { /* "border-box" setting allows for padding within elements without affecting the width of those elements*/
+  -webkit-box-sizing: border-box; /*allows for older versions of firefox*/
+  -moz-box-sizing: border-box;  /*allows for older versions of firefox*/
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto; /* centers content */
+
+}
+
+.col-1 {
+  float: left; /* makes columns */
+  width: 32%; /* we get these percents by leaving room for 2% margins, and one of those margins will be absorbed*/
+}
+
+.col-2 {
+  float: left; /* makes columns */
+  width: 66%; /* together with the 32% and margins, will take up 100%*/
+}
+
+.col-3 {
+  /* block element, so we dont need to specify 100% width as its automatic */
+  backgrou: #ccc;
+}
+
+[class*="col-"] { /* means "anything that has a class that has value 'col-' anywhere inside of it"*/
+  margin-left: 2%; /* only gives a margin on the LEFT side*/
+}
+
+.first {
+  margin-left: 0%; /*apply this class to the one column farthest left that we want to have NO margin on the left*/
+}
+
+.clearfix:after { /* parent ~line 52 in index.html (div.wrapper) is gonna collapse cuz all its children are floating, so we need to add this clearfix). so we add the class of clearfix to parents that need it*/
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+/*///// SECTIONS //////*/
+
+header {
+  position: fixed; /*will keep header fixed (always visible) as we scroll*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1; /* so it stays on top of everything*/
+}
+
+
+section {
+  padding: 20px; /* so that text isnt right up against the edge*/
+  margin-bottom: 20px;
+}
+
+/*////// SOCIAL //////*/
+
+#social {
+  position: fixed; /* will keep the social media icons ALWAYS VISIBLE*/
+  top: 200px;
+  right: 20px;
+  width: 40px;
+  z-index: 1; /* so itll always be on top of everything else */
+}
+
+#social a { /* this descendent selector "#social a" selects all the anchor links under #social*/
+  display: block; /* will let them stack vertically */
+  width: 40px;
+  height: 40px;
+  background: yellow;
 }
